@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #calcustyle {
+            position: relative;
+            width: 320px;
+            border: 2px solid black;
+            border-radius: 30px;
+            margin: 100px auto;
+            padding: 50px 20px 30px 20px;
+            text-align: center;
+        }
+
+        .butt1 {
+            width: 50px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #butt {
+            width: 104px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #butt2 {
+            width: 320px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .dpscr {
+            border: 1px solid black;
+            width: 315px;
+            height: 50px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="calcustyle">
+    <input type="text" id="result" class="dpscr"><br><br>
+    <button type="button" class="butt1" onclick="setOutput('1')" value="1">1</button>
+    <button type="button" class="butt1" onclick="setOutput('2')">2</button>
+    <button type="button" class="butt1" onclick="setOutput('3')">3</button>
+    <button type="button" class="butt1" onclick="setOutput('4')">4</button>
+    <button type="button" class="butt1" onclick="setOutput('+')">+</button>
+    <button type="button" class="butt1" onclick="setOutput('-')">-</button>
+    <br>
+    <button type="button" class="butt1" onclick="setOutput('5')">5</button>
+    <button type="button" class="butt1" onclick="setOutput('6')">6</button>
+    <button type="button" class="butt1" onclick="setOutput('7')">7</button>
+    <button type="button" class="butt1" onclick="setOutput('8')">8</button>
+    <button type="button" class="butt1" onclick="setOutput('*')">*</button>
+    <button type="button" class="butt1" onclick="setOutput('/')">/</button>
+    <br>
+    <button type="button" class="butt1" onclick="setOutput('9')">9</button>
+    <button type="button" class="butt1" onclick="setOutput('0')">0</button>
+    <button type="button" class="butt1" onclick="setOutput('%')">%</button>
+    <button type="button" class="butt1" onclick="setOutput(',')">,</button>
+    <button type="button" id="butt" onclick="clearOutput()">C</button>
+    <br>
+    <button type="button" id="butt2" onclick="calculator()" value="lett">=</button>
+</div>
+<script>
+    function setOutput(c) {
+        document.getElementById("result").value += c;
+    }
+
+    function calculator() {
+        let result = document.getElementById("result").value;
+        document.getElementById("result").value = eval(result);
+    }
+
+    function clearOutput() {
+        document.getElementById("result").value = null;
+    }
+
+    window.addEventListener("keydown", checkKey);
+
+    function checkKey(evt) {
+        let inputKB = evt.key;
+        if (!isNaN(inputKB)){
+            setOutput(evt.key);
+        }
+    }
+</script>
+</body>
+</html>

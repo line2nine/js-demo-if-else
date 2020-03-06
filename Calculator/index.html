@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .table {
+            border: 1px solid black;
+            border-spacing: 10px;
+        }
+
+        .td {
+            border: 1px solid black;
+        }
+        button {
+            width: 89px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+<table align="center">
+    <tr>
+        <td><input type="text" id="input1" placeholder="Nhập vào 1 số"></td>
+        <td><input type="text" id="input2" placeholder="Nhập vào 1 số"></td>
+    </tr>
+</table>
+<div style="text-align: center">
+    <button type="button" onclick="calculator('1')">+</button>
+    <button type="button" onclick="calculator('2')">-</button>
+    <button type="button" onclick="calculator('3')">X</button>
+    <button type="button" onclick="calculator('4')">/</button>
+</div>
+</fieldset>
+<br>
+<div id="result" style="color: red; text-align: center"></div>
+<script>
+    function calculator(c) {
+        let x = document.getElementById("input1").value;
+        x = parseFloat(x);
+        let y = document.getElementById("input2").value;
+        y = parseFloat(y);
+        let r;
+        switch (c) {
+            case '1':
+                r=x+y;
+                break;
+            case '2':
+                r=x-y;
+                break;
+            case '3':
+                r=x*y;
+                break;
+            case '4':
+                r=x/y;
+                break;
+        }
+        document.getElementById("result").innerHTML = 'Kết quả là: ' + r;
+        }
+</script>
+</body>
+</html>
