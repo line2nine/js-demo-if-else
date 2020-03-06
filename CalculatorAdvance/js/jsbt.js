@@ -25,3 +25,12 @@ function checkKey(evt) {
         setOutput(evt.key);
     }
 }
+
+function checkRegex() {
+    let check = /^[0-9-+()]*$/;
+    let check2 = /^\s*([-+]?)(\d+)(?:\s*([-+*\/])\s*((?:\s[-+])?\d+)\s*)+$/;
+    let check3 = /^[-+]?[0-9]+([-+*/]+[-+]?[0-9]+)*$/;
+    let txt = "/";
+    console.log(check.test(txt));
+}
+checkRegex();
