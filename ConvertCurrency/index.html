@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        table {
-            border-spacing: 50px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <table>
@@ -20,7 +15,7 @@
     </tr>
     <tr>
         <td><input type="text" id="inputdata"></td>
-        <td><select id="slect">
+        <td><select id="slect1">
             <option value="vn">VietNam</option>
             <option value="usd">USD</option>
             <option value="yen">Yen</option>
@@ -31,32 +26,12 @@
             <option value="yen">Yen</option>
         </select></td>
         <td>
-            <button type="button" onclick="calc()">Convert</button>
+            <button type="button" onclick="converter()">Convert</button>
         </td>
     </tr>
 </table>
 <br>
 <div style="color: blue" id="result"></div>
-<script>
-    function calc() {
-        let x = document.getElementById("inputdata").value;
-        x = parseInt(x);
-        let y = document.getElementById("slect").value;
-        let z = document.getElementById("slect2").value;
-        let usdrate = 23000;
-        let yenrate = 215;
-        if (y === "usd") {
-            x = x * usdrate;
-        } else if (y === "yen") {
-            x = x * yenrate;
-        }
-        if (z === "usd") {
-            x = x / usdrate;
-        } else if (z === "yen") {
-            x = x / yenrate;
-        }
-        document.getElementById("result").innerHTML = 'Kết quả là: ' + x;
-    }
-</script>
+<script src="js/jsbt.js"></script>
 </body>
 </html>

@@ -39,3 +39,15 @@ function dientichcn() {
     document.getElementById("dai").innerHTML = 'Chiều rộng: '+ x;
     document.getElementById("area").innerHTML = 'Diện tích hình chữ nhật là '+(x * y);
 }
+
+function avab() {
+    let x = prompt('Nhập a');
+    x = parseInt(x);
+    let y = prompt('Nhập b');
+    y = parseInt(y);
+    if (x % y === 0) {
+        alert('a là bội số của b');
+    } else {
+        alert('a không phải là bội số của b');
+    }
+}

@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .table {
-            border: 1px solid black;
-            border-spacing: 10px;
-        }
-
-        .td {
-            border: 1px solid black;
-        }
         button {
             width: 89px;
         }
@@ -34,29 +26,6 @@
 </fieldset>
 <br>
 <div id="result" style="color: red; text-align: center"></div>
-<script>
-    function calculator(c) {
-        let x = document.getElementById("input1").value;
-        x = parseFloat(x);
-        let y = document.getElementById("input2").value;
-        y = parseFloat(y);
-        let r;
-        switch (c) {
-            case '1':
-                r=x+y;
-                break;
-            case '2':
-                r=x-y;
-                break;
-            case '3':
-                r=x*y;
-                break;
-            case '4':
-                r=x/y;
-                break;
-        }
-        document.getElementById("result").innerHTML = 'Kết quả là: ' + r;
-        }
-</script>
+<script src="js/jsbt.js"></script>
 </body>
 </html>

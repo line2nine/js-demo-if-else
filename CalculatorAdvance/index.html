@@ -3,54 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        #calcustyle {
-            position: relative;
-            width: 320px;
-            border: 2px solid black;
-            border-radius: 30px;
-            margin: 100px auto;
-            padding: 50px 20px 30px 20px;
-            text-align: center;
-        }
-
-        .butt1 {
-            width: 50px;
-            height: 30px;
-            font-size: 20px;
-            border: 1px solid black;
-            background-color: whitesmoke;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-
-        #butt {
-            width: 104px;
-            height: 30px;
-            font-size: 20px;
-            border: 1px solid black;
-            background-color: whitesmoke;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        #butt2 {
-            width: 320px;
-            height: 30px;
-            font-size: 20px;
-            border: 1px solid black;
-            background-color: whitesmoke;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .dpscr {
-            border: 1px solid black;
-            width: 315px;
-            height: 50px;
-            font-size: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="calcustyle">
@@ -77,28 +30,6 @@
     <br>
     <button type="button" id="butt2" onclick="calculator()" value="lett">=</button>
 </div>
-<script>
-    function setOutput(c) {
-        document.getElementById("result").value += c;
-    }
-
-    function calculator() {
-        let result = document.getElementById("result").value;
-        document.getElementById("result").value = eval(result);
-    }
-
-    function clearOutput() {
-        document.getElementById("result").value = null;
-    }
-
-    window.addEventListener("keydown", checkKey);
-
-    function checkKey(evt) {
-        let inputKB = evt.key;
-        if (!isNaN(inputKB)){
-            setOutput(evt.key);
-        }
-    }
-</script>
+<script src="js/jsbt.js"></script>
 </body>
 </html>

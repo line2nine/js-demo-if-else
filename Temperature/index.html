@@ -3,20 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Đổi độ C sang F</title>
-</head>
-<body onload="ctof()">
 
-<script>
-    function ctof() {
-        let resultConfirm = confirm("Đây là trang tính đổi độ C sang F, có muốn tiếp tục?");
-        if (resultConfirm === false) {
-            window.close();
-        } else {
-            let x = prompt('Hãy nhập độ C');
-            x = Number.parseFloat(x);
-            document.write('Độ F là ' + ((x * 1.8) + 3));
-        }
-    }
-</script>
+</head>
+<body onload="changeCtoF()">
+
+<script src="js/jsbt.js"></script>
 </body>
 </html>
