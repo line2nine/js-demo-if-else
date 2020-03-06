@@ -1,44 +1,45 @@
 #calcustyle {
     position: relative;
-    width: 320px;
+    width: 350px;
     border: 2px solid black;
-    border-radius: 30px;
-    margin: 100px auto;
-    padding: 50px 20px 30px 20px;
+    border-radius: 10px;
+    margin: 80px auto;
+    padding: 20px 20px 80px 20px;
     text-align: center;
 }
 
-.butt1 {
-    width: 50px;
-    height: 30px;
-    font-size: 20px;
+.buttDigit {
+    width: 80px;
+    height: 40px;
+    font-size: 30px;
     border: 1px solid black;
     background-color: whitesmoke;
     border-radius: 20px;
     cursor: pointer;
 }
 
-#butt {
-    width: 104px;
-    height: 30px;
-    font-size: 20px;
+#buttClear {
+    width: 108px;
+    height: 50px;
+    font-size: 30px;
     border: 1px solid black;
     background-color: whitesmoke;
     border-radius: 10px;
     cursor: pointer;
 }
 
-#butt2 {
-    width: 320px;
-    height: 30px;
-    font-size: 20px;
-    border: 1px solid black;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    cursor: pointer;
-}
+/*#buttResult {*/
+/*    width: 200px;*/
+/*    height: 80px;*/
+/*    font-size: 20px;*/
+/*    border: 1px solid black;*/
+/*    background-color: whitesmoke;*/
+/*    border-radius: 10px;*/
+/*    cursor: pointer;*/
+/*    margin-left: 120px;*/
+/*}*/
 
-.dpscr {
+.displaySCR {
     border: 1px solid black;
     width: 315px;
     height: 50px;

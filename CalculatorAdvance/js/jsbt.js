@@ -11,6 +11,12 @@ function clearOutput() {
     document.getElementById("result").value = null;
 }
 
+function delString() {
+    let valueDel = document.getElementById("result").value;
+    let valueDel1Digit = valueDel.substring(0, valueDel.length - 1);
+    document.getElementById("result").value = valueDel1Digit;
+}
+
 window.addEventListener("keydown", checkKey);
 
 function checkKey(evt) {

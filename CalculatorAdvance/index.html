@@ -7,28 +7,35 @@
 </head>
 <body>
 <div id="calcustyle">
-    <input type="text" id="result" class="dpscr"><br><br>
-    <button type="button" class="butt1" onclick="setOutput('1')" value="1">1</button>
-    <button type="button" class="butt1" onclick="setOutput('2')">2</button>
-    <button type="button" class="butt1" onclick="setOutput('3')">3</button>
-    <button type="button" class="butt1" onclick="setOutput('4')">4</button>
-    <button type="button" class="butt1" onclick="setOutput('+')">+</button>
-    <button type="button" class="butt1" onclick="setOutput('-')">-</button>
+    <input type="text" id="result" class="displaySCR"><br><br>
+    <button type="button" class="buttDigit" onclick="setOutput('1')">1</button>
+    <button type="button" class="buttDigit" onclick="setOutput('2')">2</button>
+    <button type="button" class="buttDigit" onclick="setOutput('3')">3</button>
+    <button type="button" class="buttDigit" onclick="setOutput('+')">+</button>
     <br>
-    <button type="button" class="butt1" onclick="setOutput('5')">5</button>
-    <button type="button" class="butt1" onclick="setOutput('6')">6</button>
-    <button type="button" class="butt1" onclick="setOutput('7')">7</button>
-    <button type="button" class="butt1" onclick="setOutput('8')">8</button>
-    <button type="button" class="butt1" onclick="setOutput('*')">*</button>
-    <button type="button" class="butt1" onclick="setOutput('/')">/</button>
     <br>
-    <button type="button" class="butt1" onclick="setOutput('9')">9</button>
-    <button type="button" class="butt1" onclick="setOutput('0')">0</button>
-    <button type="button" class="butt1" onclick="setOutput('%')">%</button>
-    <button type="button" class="butt1" onclick="setOutput(',')">,</button>
-    <button type="button" id="butt" onclick="clearOutput()">C</button>
+    <button type="button" class="buttDigit" onclick="setOutput('4')">4</button>
+    <button type="button" class="buttDigit" onclick="setOutput('5')">5</button>
+    <button type="button" class="buttDigit" onclick="setOutput('6')">6</button>
+    <button type="button" class="buttDigit" onclick="setOutput('-')">-</button>
     <br>
-    <button type="button" id="butt2" onclick="calculator()" value="lett">=</button>
+    <br>
+    <button type="button" class="buttDigit" onclick="setOutput('7')">7</button>
+    <button type="button" class="buttDigit" onclick="setOutput('8')">8</button>
+    <button type="button" class="buttDigit" onclick="setOutput('9')">9</button>
+    <button type="button" class="buttDigit" onclick="setOutput('*')">*</button>
+    <br>
+    <br>
+    <button type="button" class="buttDigit" onclick="setOutput('0')">0</button>
+    <button type="button" class="buttDigit" onclick="setOutput(',')">,</button>
+    <button type="button" class="buttDigit" onclick="setOutput('%')">%</button>
+    <button type="button" class="buttDigit" onclick="setOutput('/')">/</button>
+    <br>
+    <br>
+    <button type="button" id="buttClear" onclick="clearOutput()">C</button>
+    <button type="button" id="buttClear" onclick="delString()">DEL</button>
+    <button type="button" id="buttClear" onclick="calculator()">=</button>
+
 </div>
 <script src="js/jsbt.js"></script>
 </body>
